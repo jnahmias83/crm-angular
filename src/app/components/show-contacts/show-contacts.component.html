@@ -1,5 +1,5 @@
 <div class="text-center p-2" style="background-color: rgb(83, 203, 163)">
-    <h3><i class="fa-solid fa-people-group"></i> Contacts</h3>
+    <h3><i class="fa-solid fa-address-book"></i> Contacts</h3>
 </div>
 
 <table class="table table-striped">
@@ -15,7 +15,9 @@
     <tfoot>
       <tr *ngFor="let contact of contacts; index as i">
         <td>{{ i + 1 }}</td>
-        <td>{{ contact.name }}</td>
+        <td>
+          <img [src]="contact.image" width="50" /> {{ contact.name }}
+        </td>
         <td>{{ contact.email }}</td>
         <td>{{ contact.birthday | date: 'dd/MM/yy' }}</td>
         <td>

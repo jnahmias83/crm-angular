@@ -22,6 +22,7 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ViewCustomerComponent } from './components/view-customer/view-customer.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     LeftMenuComponent,
     ShowContactsComponent,
     ViewCustomerComponent,
-    FilterPipe
+    FilterPipe,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
