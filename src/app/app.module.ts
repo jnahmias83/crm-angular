@@ -23,6 +23,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ViewCustomerComponent } from './components/view-customer/view-customer.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     ShowContactsComponent,
     ViewCustomerComponent,
     FilterPipe,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

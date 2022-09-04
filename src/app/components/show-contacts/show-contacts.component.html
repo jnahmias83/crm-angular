@@ -19,7 +19,7 @@
           <img [src]="contact.image" width="50" /> {{ contact.name }}
         </td>
         <td>{{ contact.email }}</td>
-        <td>{{ contact.birthday | date: 'dd/MM/yy' }}</td>
+        <td>{{ contact.birthday | date: 'dd/mm/yy' }}</td>
         <td>
             <ul>
                 <li *ngFor="let phone of contact.phones">
