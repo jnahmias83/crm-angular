@@ -1,0 +1,30 @@
+<div class="text-center p-2" style="background-color: rgb(83, 203, 163)">
+    <h3><i class="fa-solid fa-people-group"></i> Contacts</h3>
+</div>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Birthday</th>
+        <th>Phones</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr *ngFor="let contact of contacts; index as i">
+        <td>{{ i + 1 }}</td>
+        <td>{{ contact.name }}</td>
+        <td>{{ contact.email }}</td>
+        <td>{{ contact.birthday | date: 'dd/MM/yy' }}</td>
+        <td>
+            <ul>
+                <li *ngFor="let phone of contact.phones">
+                    {{phone}}
+                </li>
+            </ul>
+        </td>
+      </tr>
+    </tfoot>
+  </table>

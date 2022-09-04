@@ -1,0 +1,9 @@
+<div class="bg-primary text-white p-5">
+  <div class="container text-center my-2">
+    <h2>COMPANY <i class="fa-solid fa-location-arrow"></i> CRM</h2>
+    <ng-container *ngIf="checkLogin()">
+      <div class="my-3"><i class="fa fa-user" aria-hidden="true"></i> {{ getUsername() }}</div>
+      <button class="btn btn-success" (click)="logout()">Logout</button>
+    </ng-container>
+  </div>
+</div>

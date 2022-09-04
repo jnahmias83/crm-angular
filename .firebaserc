@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "crm-jonathan": {
+      "hosting": {
+        "crm-angular": [
+          "crm-jonathan"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "crm-jonathan"
+  }
+}
