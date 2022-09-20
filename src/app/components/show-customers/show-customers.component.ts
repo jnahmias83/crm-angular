@@ -25,7 +25,6 @@ export class ShowCustomersComponent implements OnInit {
     this.cs.getCustomers().subscribe((customersData: Customer[]) => {
       this.customers = customersData;
     });
-
   }
 
   deleteCustomer(customer : Customer) {
